@@ -102,7 +102,7 @@ saver = tf.train.Saver()
 sess.run(tf.initialize_all_variables())
 #with tf.Session() as sess:
     #sess.run(init_op)
-for i in range(100):
+for i in range(20000):
   batch = mnist.train.next_batch(50)
   if i%100 == 0:
     train_accuracy = accuracy.eval(feed_dict={
