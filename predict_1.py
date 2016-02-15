@@ -58,7 +58,7 @@ def predictint(imvalue):
         #print ("Model restored.")
    
         prediction=tf.argmax(y,1)
-        return prediction.eval(feed_dict={x: [imvalue],keep_prob: 1.0}, session=sess)
+        return prediction.eval(feed_dict={x: [imvalue]}, session=sess)
 
 
 def imageprepare(argv):
