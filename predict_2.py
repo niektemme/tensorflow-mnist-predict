@@ -13,17 +13,28 @@
 # limitations under the License.
 # ==============================================================================
 
-"""A very simple MNIST classifier.
-Documentation at
+"""Predict a handwritten integer.
+
+Script requires
+1) saved model (model2.ckpt file) in the same location as the script is run from.
+2) one argument (png file of a handwritten integer)
+
+Documentation at:
 http://niektemme.com/ @@to do
 """
 
-
+#import modules
 import sys
 import tensorflow as tf
 from PIL import Image, ImageFilter
 
 def predictint(imvalue):
+    """
+    This function returns the predicted integer.
+    The imput is the pixel values from the imageprepare() function.
+    """
+    
+    # Define the model (same as when creating the model file)
     x = tf.placeholder(tf.float32, [None, 784])
     W = tf.Variable(tf.zeros([784, 10]))
     b = tf.Variable(tf.zeros([10]))
@@ -72,13 +83,20 @@ def predictint(imvalue):
     init_op = tf.initialize_all_variables()
     saver = tf.train.Saver()
     
+    """
+    Load the model2.ckpt file
+    file is stored in the same directory as this python script is started
+    Use the model to predict the integer. Integer is returend as list.
+
+    Based on the documentatoin at
+    https://www.tensorflow.org/versions/master/how_tos/variables/index.html
+    """
     with tf.Session() as sess:
         sess.run(init_op)
-        saver.restore(sess, "model3.ckpt")
+        saver.restore(sess, "model2.ckpt")
         #print ("Model restored.")
        
         prediction=tf.argmax(y_conv,1)
-        #print ("predictions", prediction.eval(feed_dict={x: [imvalue],keep_prob: 1.0}, session=sess))
         return prediction.eval(feed_dict={x: [imvalue],keep_prob: 1.0}, session=sess)
 
 
@@ -113,7 +131,7 @@ def imageprepare(argv):
 def main(argv):
     imvalue = imageprepare(argv)
     predint = predictint(imvalue)
-    print (predint[0])
+    print (predint[0]) #first value in list
     
 if __name__ == "__main__":
     main(sys.argv[1])

@@ -32,6 +32,7 @@ mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
 
 sess = tf.InteractiveSession()
 
+# Create the model
 x = tf.placeholder(tf.float32, [None, 784])
 y_ = tf.placeholder(tf.float32, [None, 10])
 W = tf.Variable(tf.zeros([784, 10]))
@@ -90,9 +91,10 @@ correct_prediction = tf.equal(tf.argmax(y_conv,1), tf.argmax(y_,1))
 accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
 
-# Train the model and save the model to disk as a model.ckpt file
-# file is stored in the same directory as this python script is started
 """
+Train the model and save the model to disk as a model2.ckpt file
+file is stored in the same directory as this python script is started
+
 Based on the documentatoin at
 https://www.tensorflow.org/versions/master/how_tos/variables/index.html
 """
@@ -108,7 +110,7 @@ for i in range(100):
     print("step %d, training accuracy %g"%(i, train_accuracy))
   train_step.run(feed_dict={x: batch[0], y_: batch[1], keep_prob: 0.5})
 
-save_path = saver.save(sess, "model.ckpt")
+save_path = saver.save(sess, "model2.ckpt")
 print ("Model saved in file: ", save_path)
 
 print("test accuracy %g"%accuracy.eval(feed_dict={
