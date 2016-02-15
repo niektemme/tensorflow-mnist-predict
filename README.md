@@ -1,0 +1,3 @@
+# TensorFlow MNIST predict
+
+placeholder
