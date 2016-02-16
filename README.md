@@ -1,6 +1,6 @@
 # TensorFlow<sup>TM</sup> MNIST predict (recognise handwriting)
 
-This repository accompanies the blog post [Using TensorFlow<sup>TM</sup> to create your own handwriting recognition engine](@@). 
+This repository accompanies the blog post [Using TensorFlow<sup>TM</sup> to create your own handwriting recognition engine](http://niektemme.com/). 
 
 ## Installation & Setup
 
@@ -18,11 +18,11 @@ This projects consists of four scripts.
 The following Python libraries are required.
 
 - sys - should be installed by default
-- tensorflow - [TensorFlow] https://www.tensorflow.org/](
+- tensorflow - [TensorFlow](https://www.tensorflow.org/)
 - PIL – [Pillow](http://pillow.readthedocs.org)
 
 ### Installing TensorFlow
-Of course TensorFlow has to be installed. The [TensorFlow website]( https://www.tensorflow.org/versions/master/get_started/index.html) has a good manual .
+Of course TensorFlow has to be installed. The [TensorFlow website](https://www.tensorflow.org/versions/master/get_started/index.html) has a good manual .
 
 ### Installing Python Image Library (PIL)
 The Python Image Library (PIL) is no longer available. Luckily there is a good fork, called Pillow. Installing is as easy as: 
@@ -52,7 +52,7 @@ or
 to create the model based on the MNIST beginners tutorial (model_1) or the model based on the expert tutorial (model_2).
 
 ### 2. create an image file
-You have to create a PNG file that contains a handwritten number. The background has to be white and the number has to be black. Any paint program should be able to do this. Also the image has to be auto cropped, so there is no large border around the image.
+You have to create a PNG file that contains a handwritten number. The background has to be white and the number has to be black. Any paint program should be able to do this. Also the image has to be auto cropped, so there is no border around the number.
 
 ### 3. predict the integer
 The easiest way again is to put the image file from the previous step (step 2) in the same directory as the python scripts and cd to the directory where the python files are located. 
