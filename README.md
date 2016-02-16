@@ -1,4 +1,4 @@
-# TensorFlow<sub>TMM</sub> MNIST predict (recognise handwriting)
+# TensorFlow<sup>TM</sup> MNIST predict (recognise handwriting)
 
 This repository accompanies the blog post [Using TensorFlow<sup>TM</sup> to create your own handwriting recognition engine](@@). 
 
