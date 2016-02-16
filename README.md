@@ -35,9 +35,10 @@ The easyest way the use the scripts is to put all four scripts in the same folde
 
 ## Running
 Running is based on the steps:
-1) create the model file
-2) create an image file containing a handwritten number
-3) predict the integer 
+
+1. create the model file
+2. create an image file containing a handwritten number
+3. predict the integer 
 
 ### 1. creating the model file
 The easiest way is to cd to the directory where the python files are located. Then run:
