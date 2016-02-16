@@ -1,4 +1,4 @@
-# TensorFlow MNIST predict (recognise handwriting)
+# TensorFlow<sub>TMM</sub> MNIST predict (recognise handwriting)
 
 This repository accompanies the blog post [Using TensorFlow<sup>TM</sup> to create your own handwriting recognition engine](@@). 
 
@@ -25,7 +25,8 @@ The following Python libraries are required.
 Of course TensorFlow has to be installed. The [TensorFlow website]( https://www.tensorflow.org/versions/master/get_started/index.html) has a good manual .
 
 ### Installing Python Image Library (PIL)
-The Python Image Library (PIL) is no longer available. Luckily there is a good fork, called Pillow. Installing is as easy as: ``sudo pip install Pillow``
+The Python Image Library (PIL) is no longer available. Luckily there is a good fork, called Pillow. Installing is as easy as: 
+```sudo pip install Pillow```
 
 Or look at the [Pillow documentation ](http://pillow.readthedocs.org) for other installation options,
 
