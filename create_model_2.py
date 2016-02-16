@@ -1,5 +1,5 @@
 # Copyright 2016 Niek Temme.
-# Adapted form the on the MNIST advanced tutorial by Google. 
+# Adapted form the on the MNIST expert tutorial by Google. 
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@
 Documentation at
 http://niektemme.com/ @@to do
 
-This script is based on the Tensoflow MNIST advanced tutorial
+This script is based on the Tensoflow MNIST expert tutorial
 See extensive documentation for the tutorial at
 https://www.tensorflow.org/versions/master/tutorials/mnist/pros/index.html
 """

@@ -13,11 +13,11 @@
 # limitations under the License.
 # ==============================================================================
 
-"""Predict a handwritten integer (MNIST simple).
+"""Predict a handwritten integer (MNIST beginners).
 
 Script requires
 1) saved model (model.ckpt file) in the same location as the script is run from.
-(requried a model created in the MNIST simple tutorial)
+(requried a model created in the MNIST beginners tutorial)
 2) one argument (png file location of a handwritten integer)
 
 Documentation at:
