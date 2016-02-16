@@ -9,10 +9,10 @@ This project uses the MNIST tutorials form the TensorFlow website. There are two
 
 This projects consists of four scripts. 
 
-1. create_model_1.py – creates a model model.ckpt file based on the beginners tutorial.
-2. create_model_1.py – creates a model model2.ckpt file based on the expert tutorial.
-3. predict_1.py – uses the model.ckpt (beginners tutorial) file to predict the correct integer form a handwritten number in a .png file.
-4. predict_2.py – uses the model2.ckpt (expert tutorial) file to predict the correct integer form a handwritten number in a .png file.
+1. *create_model_1.py* – creates a model model.ckpt file based on the beginners tutorial.
+2. *create_model_1.py* – creates a model model2.ckpt file based on the expert tutorial.
+3. *predict_1.py* – uses the model.ckpt (beginners tutorial) file to predict the correct integer form a handwritten number in a .png file.
+4. *predict_2.py* – uses the model2.ckpt (expert tutorial) file to predict the correct integer form a handwritten number in a .png file.
 
 ### Dependencies
 The following Python libraries are required.
@@ -65,6 +65,6 @@ or
 
 ```python predict_2.py ‘number1.png’```
 
-The first predict_1.py uses the (model.ckpt) file created by the create_model_1.py script. The predict_2.py uses the (model2.ckpt) file created by the create_model_2.py script. 
+The first script, predict_1.py, uses the model.ckpt file created by the create_model_1.py script. The second script, predict_2.py, uses the model2.ckpt file created by the create_model_2.py script. 
 
 
