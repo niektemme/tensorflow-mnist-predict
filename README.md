@@ -1,6 +1,6 @@
 # TensorFlow<sup>TM</sup> MNIST predict (recognise handwriting)
 
-This repository accompanies the blog post [Using TensorFlow<sup>TM</sup> to create your own handwriting recognition engine](http://niektemme.com/). 
+This repository accompanies the blog post [Using TensorFlow<sup>TM</sup> to create your own handwriting recognition engine](http://niektemme.com/2016/02/21/tensorflow-handwriting/). 
 
 ## Installation & Setup
 
