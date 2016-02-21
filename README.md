@@ -5,9 +5,9 @@ This repository accompanies the blog post [Using TensorFlow<sup>TM</sup> to crea
 ## Installation & Setup
 
 ### Overview
-This project uses the MNIST tutorials form the TensorFlow website. There are two tutorials the beginners tutorial and the expert tutorial. These tutorials use a different deep learning model. The python scripts ending with _1 use the model from the beginner’s tutorial. The scripts ending with _2 use the model from the advanced tutorial. As expected scripts using the model from the expert tutorial gives better results.
+This project uses the MNIST tutorials from the TensorFlow website. The two tutorials, the beginner tutorial and the expert tutorial, use different deep learning models. The python scripts ending with _1 use the model from the beginner tutorial. The scripts ending with _2 use the model from the advanced tutorial. As expected scripts using the model from the expert tutorial give better results.
 
-This projects consists of four scripts. 
+This projects consists of four scripts: 
 
 1. _create_model_1.py_ – creates a model model.ckpt file based on the beginners tutorial.
 2. *create_model_1.py* – creates a model model2.ckpt file based on the expert tutorial.
@@ -22,17 +22,17 @@ The following Python libraries are required.
 - PIL – [Pillow](http://pillow.readthedocs.org)
 
 ### Installing TensorFlow
-Of course TensorFlow has to be installed. The [TensorFlow website](https://www.tensorflow.org/versions/master/get_started/index.html) has a good manual .
+Of course TensorFlow needs to be installed. The [TensorFlow website](https://www.tensorflow.org/versions/master/get_started/index.html) has a good manual .
 
 ### Installing Python Image Library (PIL)
-The Python Image Library (PIL) is no longer available. Luckily there is a good fork, called Pillow. Installing is as easy as:
+The Python Image Library (PIL) is no longer available. Luckily there is a good fork called Pillow. Installing is as easy as:
 
 ```sudo pip install Pillow```
 
-Or look at the [Pillow documentation ](http://pillow.readthedocs.org) for other installation options,
+Or look at the [Pillow documentation ](http://pillow.readthedocs.org) for other installation options.
 
-### The python scripts.
-The easyest way the use the scripts is to put all four scripts in the same folder. If TensorFlow is installed correctly the images to train the model are downloaded automatically. 
+### The python scripts
+The easiest way the use the scripts is to put all four scripts in the same folder. If TensorFlow is installed correctly the images to train the model are downloaded automatically. 
 
 ## Running
 Running is based on the steps:
@@ -41,7 +41,7 @@ Running is based on the steps:
 2. create an image file containing a handwritten number
 3. predict the integer 
 
-### 1. creating the model file
+### 1. create the model file
 The easiest way is to cd to the directory where the python files are located. Then run:
 
 ```python create_model_1.py```
@@ -53,7 +53,7 @@ or
 to create the model based on the MNIST beginners tutorial (model_1) or the model based on the expert tutorial (model_2).
 
 ### 2. create an image file
-You have to create a PNG file that contains a handwritten number. The background has to be white and the number has to be black. Any paint program should be able to do this. Also the image has to be auto cropped, so there is no border around the number.
+You have to create a PNG file that contains a handwritten number. The background has to be white and the number has to be black. Any paint program should be able to do this. Also the image has to be auto cropped so that there is no border around the number.
 
 ### 3. predict the integer
 The easiest way again is to put the image file from the previous step (step 2) in the same directory as the python scripts and cd to the directory where the python files are located. 
