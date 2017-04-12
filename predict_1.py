@@ -41,7 +41,7 @@ def predictint(imvalue):
     b = tf.Variable(tf.zeros([10]))
     y = tf.nn.softmax(tf.matmul(x, W) + b)
 
-    init_op = tf.initialize_all_variables()
+    init_op = tf.global_variables_initializer()
     saver = tf.train.Saver()
     
     """

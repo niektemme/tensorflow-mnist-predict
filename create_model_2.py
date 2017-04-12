@@ -99,7 +99,7 @@ Based on the documentatoin at
 https://www.tensorflow.org/versions/master/how_tos/variables/index.html
 """
 saver = tf.train.Saver()
-sess.run(tf.initialize_all_variables())
+sess.run(global_variables_initializer())
 #with tf.Session() as sess:
     #sess.run(init_op)
 for i in range(20000):
