@@ -74,8 +74,8 @@ def imageprepare(argv):
     if width > height: #check which dimension is bigger
         #Width is bigger. Width becomes 20 pixels.
         nheight = int(round((20.0/width*height),0)) #resize height according to ratio width
-        if (nheigth == 0): #rare case but minimum is 1 pixel
-            nheigth = 1  
+        if (nheight == 0): #rare case but minimum is 1 pixel
+            nheight = 1
         # resize and sharpen
         img = im.resize((20,nheight), Image.ANTIALIAS).filter(ImageFilter.SHARPEN)
         wtop = int(round(((28 - nheight)/2),0)) #caculate horizontal pozition
