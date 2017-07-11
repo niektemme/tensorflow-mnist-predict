@@ -32,7 +32,7 @@ from PIL import Image,ImageFilter
 def predictint(imvalue):
     """
     This function returns the predicted integer.
-    The imput is the pixel values from the imageprepare() function.
+    The input is the pixel values from the imageprepare() function.
     """
     
     # Define the model (same as when creating the model file)
