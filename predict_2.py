@@ -81,7 +81,7 @@ def predictint(imvalue):
     
     y_conv=tf.nn.softmax(tf.matmul(h_fc1_drop, W_fc2) + b_fc2)
     
-    init_op = tf.initialize_all_variables()
+    init_op = tf.global_variables_initializer()
     saver = tf.train.Saver()
     
     """
