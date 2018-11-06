@@ -41,7 +41,7 @@ y_ = tf.placeholder(tf.float32, [None, 10])
 cross_entropy = -tf.reduce_sum(y_*tf.log(y))
 train_step = tf.train.GradientDescentOptimizer(0.01).minimize(cross_entropy)
 
-init_op = global_variables_initializer()
+init_op = tf.global_variables_initializer()
 saver = tf.train.Saver()
 
 
