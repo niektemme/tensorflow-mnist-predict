@@ -41,7 +41,7 @@ y_ = tf.placeholder(tf.float32, [None, 10])
 cross_entropy = -tf.reduce_sum(y_*tf.log(y))
 train_step = tf.train.GradientDescentOptimizer(0.01).minimize(cross_entropy)
 
-init_op = global_variables_initializer()
+init_op = tf.global_variables_initializer()
 saver = tf.train.Saver()
 
 
@@ -58,6 +58,6 @@ with tf.Session() as sess:
         batch_xs, batch_ys = mnist.train.next_batch(100)
         sess.run(train_step, feed_dict={x: batch_xs, y_: batch_ys})
         
-    save_path = saver.save(sess, "model.ckpt")
+    save_path = saver.save(sess, "./model.ckpt")
     print ("Model saved in file: ", save_path)
 

@@ -99,7 +99,7 @@ Based on the documentatoin at
 https://www.tensorflow.org/versions/master/how_tos/variables/index.html
 """
 saver = tf.train.Saver()
-sess.run(global_variables_initializer())
+sess.run(tf.global_variables_initializer())
 #with tf.Session() as sess:
     #sess.run(init_op)
 for i in range(20000):
@@ -110,7 +110,7 @@ for i in range(20000):
     print("step %d, training accuracy %g"%(i, train_accuracy))
   train_step.run(feed_dict={x: batch[0], y_: batch[1], keep_prob: 0.5})
 
-save_path = saver.save(sess, "model2.ckpt")
+save_path = saver.save(sess, "./model2.ckpt")
 print ("Model saved in file: ", save_path)
 
 print("test accuracy %g"%accuracy.eval(feed_dict={
